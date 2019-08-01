@@ -13,19 +13,12 @@ w_true = 6
 b_true = 2
 n = 300
 x_data = np.random.rand(N, 1) * 1000
-# print(x)
 noise = np.random.normal(scale=n, size=(N, 1))
-# print(noise)
 y_data = w_true * x_data + b_true + noise
-# print(y)
-# y_data = np.reshape(y_data, (-1))
-# print(y)
 
 x_data = x_data.astype('float32')
 y_data = y_data.astype('float32')
 
-print(x_data.shape, y_data.shape)
-print(x_data.dtype, y_data.dtype)
 plt.scatter(x_data, y_data)
 
 #
